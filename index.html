@@ -6,39 +6,20 @@
     <title>Hotel</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- CSS here -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header>
-      <!-- Header Start -->
-      <nav class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <div class="nav-title">
-            <a href="index.html">Hotel</a>
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-        </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-
-      <div class="header-heading-box">
-        <h1>A Luxury <span>Stay</span></h1>
-      </div>
     </header>
 
     <main>
@@ -51,7 +32,7 @@
 
             <div class="about-column">
               <div class="about-img">
-                <img src="images/customer/customer1.png" alt="" />
+                <img src="img/customer1.png" alt="" />
               </div>
             </div>
             <div class="about-column">
@@ -75,108 +56,50 @@
       </section>
 
       <section id="rooms">
-        <div class="main-container">
-          <div class="rooms-wrap">
-            <div class="common-heading">
-              <h1>Find Your Best Room</h1>
-            </div>
-            <div class="room-items">
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room1.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room2.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room3.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="room-items">
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room4.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room5.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room6.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="room-items">
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room3.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room1.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-
-              <div class="room-item">
-                <div class="room-img">
-                  <img src="images/rooms/room2.jpg" alt="" />
-                </div>
-                <div class="room-desc">
-                  <h1>Classic Double Bed</h1>
-                  <p>$150 / per night</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <table class="rooms_table">
+          <tr>
+            <th>Rooms Available</th>
+          </tr>
+          <tr>
+            <th>Double Bed</th>
+            <th>Queen Room</th>
+            <th>King Room</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="img/room1.jpg" alt="" class="room-img">
+              <h1>Classic Double Bed</h1>
+              <p>$150 / per night</p>
+            </td>
+            <td>
+              <img src="img/room2.jpg" alt="" class="room-img">
+              <h1>Queen Bed</h1>
+              <p>$200 / per night</p>
+            </td>
+            <td>
+              <img src="img/room3.jpg" alt="" class="room-img">
+              <h1>King Bed</h1>
+              <p>$250 / per night</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="img/room4.jpg" alt="" class="room-img">
+              <h1>Classic Double Bed</h1>
+              <p>$170 / per night</p>
+            </td>
+            <td>
+              <img src="img/room5.jpg" alt="" class="room-img">
+              <h1>Queen Bed</h1>
+              <p>$220 / per night</p>
+            </td>
+            <td>
+              <img src="img/room6.jpg" alt="" class="room-img">
+              <h1>King Bed</h1>
+              <p>$270 / per night</p>
+            </td>
+          </tr>
+        </table>
       </section>
 
       <section id="food">
@@ -186,7 +109,7 @@
               <h1>Feeling Hungry ?</h1>
             </div>
 
-            <table>
+            <table class="food-table">
               <tr>
                 <th>Dish Name</th>
                 <th>About Dish</th>
@@ -226,63 +149,17 @@
           </div>
         </div>
       </section>
-
-      <section id="contact">
-        <div class="main-container">
-          <div class="contact-wrap">
-            <div class="common-heading">
-              <h1>Contact US</h1>
-            </div>
-
-            <form action="#">
-              <div class="form-element">
-                <label for="">First Name</label> <br />
-                <input type="text" placeholder="Your First Name" required />
-              </div>
-              <div class="form-element">
-                <label for="">Last Name</label> <br />
-                <input type="text" placeholder="Your Last Name" required />
-              </div>
-
-              <div class="form-element">
-                <label for="">Email</label> <br />
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <div class="form-element">
-                <label for="">Phone</label> <br />
-                <input type="text" placeholder="Your Phone" required />
-              </div>
-
-              <input type="submit" value="Submit" class="contact-button" />
-            </form>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer>
       <!-- Footer Start-->
       <div class="main-container">
         <div class="footer-wrap">
-          <div class="footer-column">
-            <p>
+          <div>
+            <p style="text-align: center; color: black; font-size: 18px;">
               Copyright © 2020 All rights reserved | Developed by Gurpreet Singh
               and Gaganpreet Kaur
             </p>
-          </div>
-          <div class="footer-column">
-            <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Our Best Rooms</a></li>
-              <li><a href="">Our Gallery</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <ul>
-              <li><a href="tel:Tel: 345 5667 889">Tel: 345 5667 889</a></li>
-              <li><a href="">Skype: hotelbooking</a></li>
-              <li><a href="">reservations@hotel.com</a></li>
-            </ul>
           </div>
         </div>
       </div>
